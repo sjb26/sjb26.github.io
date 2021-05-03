@@ -1,28 +1,104 @@
-.nav {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #4B8BBE;
-	border: 2px solid #000000;
-	font-size: 150%;
-	border-right: 1px solid #bbb;
-	}
+body {
+	background-color:white;
+	color: #306998;
 	
-.nav li {
-	float: left;
-	border-right: 1px solid #bbb;
 }
 
-.nav li a {
+.content {
+	background-color: #c0c8cf;
+	font-size: 17px;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	height: 100%;
+	list-style-type: none;
+	padding: 25px 25px 300px 25px;
+}
+
+.content .abm {
+	margin-left: auto;
+	margin-right: auto;
 	display: block;
-	color: white;
+}
+
+.header {
+	color:#4B8BBE;
+}
+
+h2 {
+	color:#FFD43B;
+	font-size: 30px;
+}
+
+/* Navbar container */
+.navbar {
+	overflow: hidden;
+	background-color: #4B8BBE;
+	font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+	float: left;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFD43B;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 30px 16px;
 	text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
-.nav li a:hover {
-	background-color: #FFD43B;
+/* The dropdown container */
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbutton {
+	border: none;
+	outline: none;
+	font-size: 16px;
+	color: #FFD43B;
+	padding: 30px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+	font-weight: bold;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbutton {
+	background-color: #646464;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-list {
+	display: none;
+	position: absolute;
+	background-color: #4B8BBE;
+	min-width: 120px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-list a {
+	float: none;
+	color: #FFD43B;
+	padding: 20px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+/* Add a blue background color to dropdown links when hovered over */
+.dropdown-list a:hover {
+	background-color: #646464;
+}
+
+/* Show dropdown menu when hovered over*/
+.dropdown:hover .dropdown-list {
+	display: block;
 }

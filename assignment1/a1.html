@@ -8,40 +8,47 @@
 	<link rel="stylesheet" media="all" href="../style.css" type="text/css">
 </head>
 
-<nav> 
-	<ul class="nav">
-		<li><a href="../index.html">Home</a></li>
-		<li><a href="a1.html">GEOG5990M Assignment 1</a></li>
-	</ul>
-</nav>
+<header>
+	<h1 class="header">Sam Butler | GEOG5990M | Assignment 1: Agent Based Modelling</h1>
+</header>
+
+<div class="navbar">
+	<a href="../index.html">Home</a>
+	<div class="dropdown">
+		<button class="dropbutton">GEOG5990M
+		</button>
+		<div class="dropdown-list">
+		<a href="a1.html">Assignment 1 - Agent Based Modelling</a>
+		</div>
+	</div>
+</div>
 
 <body>
-	<header>
-		<h1 class="header">Sam Butler | Assignment 1: Agent Based Modelling</h1>
-	</header>
+	<div class = "content">
+
+		<p>For the first assignment of the <b>GEOG5990M Programming for Geographical Information Analysis: Core Skills </b> module I had to create an Agent Based Model (ABM). </p>
 	
-	<p>For the first assignment of the <b>GEOG5990M Programming for Geographical Information Analysis: Core Skills </b> module I had to create an Agent Based Model (ABM). </p>
+		<h2>My Agent Based Model - Sheep and Wolves</h2>
 	
-	<h2>My Agent Based Model</h2>
+		<p>The ABM involves agents (sheep) wandering around and eating data within an environment. When the agents eat too much data, they sick it up. If the agents are within the set proxmity of another agent they will share data. This goes on and on until the stopping conditions are met, which in this scenario is when 10% of the environment has been eaten / destroyed / removed.
 	
-	<p>The ABM involves agents (sheep) wandering around and eating data within an environment. When the agents eat too much data, they sick it up. If the agents are within the set proxmity of another agent they will share data. This goes on and on until the stopping conditions are met, which in this scenario is when 10% of the environment has been eaten / destroyed / removed.</p>
+		Wolves can also be introduced into the model. Wolves will eat the sheep when they move within a distance which is specified by the neighbourhood variable. As a result the model has another stopping condition, once all sheep have been eaten the model will end.</p>
 	
-	<p>Within the ABM, the following variables can be changed as required.</p>
+		<p>Within the ABM, the following variables can be changed as required:</p>
 	
-	<ul>
-		<li>number of agents (number of sheep),</li>
-		<li>number of iterations,</li>
-		<li>neighbourhood (how close agents need to be before they share data / resources</li>
-	</ul>
+		<ul>
+			<li>number of agents (number of sheep)	</li>
+			<li>number of iterations</li>
+			<li>number of wolves</li>
+			<li>neighbourhood (how close agents need to be before they share data / resources</li>
+		</ul>
 	
-	<p> Below is a screenshot of the model when running. The model has a GUI that allows you to press run and view the model in a window. Each agent (sheep) is marked as a diamond and annotated with the number of times it has been sick.</p>
+		<p> Below is a screenshot of the model when running. The model has a GUI that allows you to press run and view the model in a window. Each agent (sheep) is marked as a white diamond and annotated with the number of times it has been sick. Each wolf is marked as a black diamond and annotated with the number of sheep it has eaten.</p>
 	
-	<p>If only some wolves had been introduced to control this ravenous sheep...</p>
+		<p> <a href="https://github.com/sjb26/githubintro">Click here to see the repository and view the code.</a></p>
 	
-	<p>Click here to see the repository and view the code. 
-	
-	<img>
-	
+		<img class="abm" src="ABM.png" width="543" height="579" style="text-align: center;">
+	</div>
 	
 	
 </body>
