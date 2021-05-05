@@ -1,7 +1,7 @@
 body {
 	background-color:white;
 	color: #306998;
-	
+	margin: 0px;
 }
 
 .content {
@@ -24,6 +24,7 @@ body {
 
 .header {
 	color:#4B8BBE;
+	margin: 10px;
 }
 
 h2 {
@@ -36,6 +37,7 @@ h2 {
 	overflow: hidden;
 	background-color: #4B8BBE;
 	font-family: Arial;
+	width: 100%;
 }
 
 /* Links inside the navbar */
